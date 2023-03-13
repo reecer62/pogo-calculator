@@ -8,10 +8,7 @@ export const Header = () => {
       <div className="pl-5 text-3xl font-bold">
         <h1>POGO IV Calculator</h1>
       </div>
-      <div className="flex-1 pl-5 text-3xl font-bold">
-        {sessionData?.user?.name ? `Notes for ${sessionData.user.name}` : ""}
-      </div>
-      <div className="flex-none gap-2">
+      <div className="ml-auto gap-2">
         <div className="dropdown-end dropdown">
           {sessionData?.user ? (
             <label
@@ -27,12 +24,7 @@ export const Header = () => {
               </div>
             </label>
           ) : (
-            <button
-              className="btn-ghost rounded-btn btn"
-              onClick={() => void signIn()}
-            >
-              Sign in
-            </button>
+            <div className="btn-circle bg-white"></div>
           )}
         </div>
       </div>
