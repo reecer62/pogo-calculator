@@ -1,15 +1,13 @@
-import { signIn, useSession } from "next-auth/react";
+import { signIn } from "next-auth/react";
 
 export const Login = () => {
-  const { data: sessionData } = useSession();
-
   return (
     <div className="card w-8/12 max-w-2xl bg-base-100 shadow-xl">
       <div className="card-body">
         <div className="card-actions justify-center">
           <button
             className="btn-primary btn min-w-full"
-            onClick={() => signIn("discord")}
+            onClick={() => void signIn("discord")}
           >
             Sign in with Discord
           </button>

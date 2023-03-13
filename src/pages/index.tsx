@@ -2,10 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { Header } from "~/components/header";
 import { Login } from "~/components/login";
-import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
   // TODO: if logged in then redirect to IV list page
 
   return (
