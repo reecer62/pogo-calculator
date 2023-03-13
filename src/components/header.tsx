@@ -5,6 +5,9 @@ export const Header = () => {
 
   return (
     <div className="navbar bg-primary text-primary-content">
+      <div className="pl-5 text-3xl font-bold">
+        <h1>POGO IV Calculator</h1>
+      </div>
       <div className="flex-1 pl-5 text-3xl font-bold">
         {sessionData?.user?.name ? `Notes for ${sessionData.user.name}` : ""}
       </div>
