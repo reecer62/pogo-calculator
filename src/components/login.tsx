@@ -1,5 +1,6 @@
 import { signIn } from "next-auth/react";
 import Image from "next/image";
+import { redirectTo } from "~/utils/redirect";
 
 export const Login = () => {
   return (
@@ -37,9 +38,7 @@ export const Login = () => {
         <div className="card-actions justify-center">
           <button
             className="btn-primary btn min-w-full"
-            onClick={() =>
-              console.log("TODO: go to IV list page and use localStorage API")
-            }
+            onClick={() => void redirectTo("ivlist")}
           >
             Continue as guest
           </button>
