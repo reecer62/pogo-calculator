@@ -13,8 +13,8 @@ const IVList: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
-      <main className="flex h-screen items-center justify-center">
-        <div className="flex w-screen justify-center">
+      <main className="flex h-screen justify-center">
+        <div className="flex w-screen">
           <IVs></IVs>
         </div>
       </main>
