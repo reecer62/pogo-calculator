@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Login = () => {
   return (
-    <div className="card w-8/12 max-w-sm bg-base-100 shadow-xl">
+    <div className="card w-8/12 min-w-max max-w-sm bg-base-100 shadow-xl">
       <div className="card-body">
         <div className="card-actions flex justify-center">
           <div className="flex w-full">
