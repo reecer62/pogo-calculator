@@ -1,12 +1,10 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import { Header } from "~/components/header";
-import { Login } from "~/components/login";
 import { Footer } from "~/components/footer";
-import { getSession } from "next-auth/react";
-import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
+import { IVs } from "~/components/ivs";
 
-const Home: NextPage = () => {
+const IVList: NextPage = () => {
   return (
     <>
       <Head>
@@ -17,7 +15,7 @@ const Home: NextPage = () => {
       <Header></Header>
       <main className="flex h-screen items-center justify-center">
         <div className="flex w-screen justify-center">
-          <Login></Login>
+          <IVs></IVs>
         </div>
       </main>
       <footer className="bg-primary">
@@ -27,22 +25,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
-
-// if logged in then redirect to IV list page
-export async function getServerSideProps(context: CreateNextContextOptions) {
-  const session = await getSession(context);
-
-  if (session) {
-    return {
-      redirect: {
-        destination: "/ivlist",
-        permanent: false,
-      },
-    };
-  }
-
-  return {
-    props: { session },
-  };
-}
+export default IVList;
