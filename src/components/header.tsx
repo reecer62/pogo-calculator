@@ -6,7 +6,9 @@ export const Header = () => {
   return (
     <div className="navbar bg-primary text-primary-content">
       <div className="pl-5 text-3xl font-bold">
-        <h1>POGO IV Calculator</h1>
+        <h1>
+          <a href="/">POGO IV Calculator</a>
+        </h1>
       </div>
       <div className="ml-auto gap-2">
         <div className="dropdown-end dropdown">
