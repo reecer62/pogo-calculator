@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { Header } from "~/components/header";
 import { Login } from "~/components/login";
+import { Footer } from "~/components/footer";
 
 const Home: NextPage = () => {
   // TODO: if logged in then redirect to IV list page
@@ -19,6 +20,9 @@ const Home: NextPage = () => {
           <Login></Login>
         </div>
       </main>
+      <footer className="bg-primary">
+        <Footer></Footer>
+      </footer>
     </>
   );
 };

@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --provider-dark-bg: #7289DA;
+    --provider-dark-color: #fff;
+}
+
+.discord-btn {
+    color: var(--provider-dark-color);
+    background-color: var(--provider-dark-bg);
+    padding: .75rem 1rem;
+}
+
+button span {
+    flex-grow: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
