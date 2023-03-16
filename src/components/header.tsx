@@ -1,4 +1,5 @@
 import { signOut, useSession } from "next-auth/react";
+import Link from "next/link";
 
 export const Header = () => {
   const { data: sessionData } = useSession();
@@ -7,7 +8,7 @@ export const Header = () => {
     <div className="navbar bg-primary text-primary-content">
       <div className="pl-5 text-3xl font-bold">
         <h1>
-          <a href="/">POGO IV Calculator</a>
+          <Link href="/">POGO IV Calculator</Link>
         </h1>
       </div>
       <div className="ml-auto gap-2">
