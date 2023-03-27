@@ -1,10 +1,12 @@
 import { type NextPage } from "next";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import { Header } from "~/components/header";
 import { Footer } from "~/components/footer";
-import { IVs } from "~/components/ivs";
 
 const IVList: NextPage = () => {
+  const router = useRouter();
+  const { ivId } = router.query;
   return (
     <>
       <Head>
@@ -15,7 +17,7 @@ const IVList: NextPage = () => {
       <Header></Header>
       <main className="flex h-screen justify-center">
         <div className="flex w-screen">
-          <IVs></IVs>
+          <p>IV list id: {ivId}</p>
         </div>
       </main>
       <footer className="bg-primary">

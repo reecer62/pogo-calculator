@@ -16,20 +16,32 @@ export const IVs = () => {
             <th>Created</th>
             <th>Modified</th>
             <th>
-              <Image
-                src="/icons8-plus.svg"
-                alt="Picture of plus icon"
-                width={24}
-                height={24}
-              />
+              <label
+                tabIndex={0}
+                className="btn-ghost btn"
+                onClick={() => console.log("Making new IV list")}
+              >
+                <Image
+                  src="/icons8-plus.svg"
+                  alt="Picture of plus icon"
+                  width={24}
+                  height={24}
+                />
+              </label>
             </th>
             <th className="justify-center">
-              <Image
-                src="/icons8-trash.svg"
-                alt="Picture of trash icon"
-                width={24}
-                height={24}
-              />
+              <label
+                tabIndex={0}
+                className="btn-ghost btn"
+                onClick={() => console.log("Deleting IV list(s)")}
+              >
+                <Image
+                  src="/icons8-trash.svg"
+                  alt="Picture of trash icon"
+                  width={24}
+                  height={24}
+                />
+              </label>
             </th>
           </tr>
         </thead>
@@ -50,12 +62,18 @@ export const IVs = () => {
               <button className="btn-ghost btn-xs btn">details</button>
             </th>
             <th>
-              <Image
-                src="/noun-down.svg"
-                alt="Picture of expand icon"
-                width={24}
-                height={24}
-              />
+              <label
+                tabIndex={0}
+                className="btn-ghost btn"
+                onClick={() => console.log("Displaying IV list overview")}
+              >
+                <Image
+                  src="/noun-down.svg"
+                  alt="Picture of expand icon"
+                  width={24}
+                  height={24}
+                />
+              </label>
             </th>
           </tr>
           {/* row 2 */}
@@ -74,12 +92,18 @@ export const IVs = () => {
               <button className="btn-ghost btn-xs btn">details</button>
             </th>
             <th>
-              <Image
-                src="/noun-up.svg"
-                alt="Picture of collapse icon"
-                width={24}
-                height={24}
-              />
+              <label
+                tabIndex={0}
+                className="btn-ghost btn"
+                onClick={() => console.log("Closing IV list overview")}
+              >
+                <Image
+                  src="/noun-up.svg"
+                  alt="Picture of collapse icon"
+                  width={24}
+                  height={24}
+                />
+              </label>
             </th>
           </tr>
         </tbody>
